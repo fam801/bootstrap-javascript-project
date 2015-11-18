@@ -1,0 +1,18 @@
+.submenu ul li
+{
+    width:25%;
+}
+#content
+{
+    min-height:800px;
+}
+#front_top_items
+{
+    margin:0 20px;
+}
+#front_top_items a
+{
+    display:inline-block;
+    margin:2px 8px 2px 8px;
+    float:left;
+}

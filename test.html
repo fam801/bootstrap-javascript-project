@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script type="text/javascript" src="  js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="  js/jquery.rotate.min.js"></script>
+    <meta charset="UTF-8">
+    <title>旋转</title>
+    <style>
+        div.rotatebtn
+        {
+            width:100px;
+            height:100px;
+            background-color:#eee;
+            border:solid 1px #ddd;
+            border-radius:100px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size:15pt;
+            font-weight:bold;
+            line-height:100px;
+            text-align:center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rotatebtn" id="rotatebtn">ROTATE</div>
+    <a href="javascript:void(0);" class="js-running">运行</a>
+    <a href="javascript:void(0);" class="js-pause">停止</a>
+</body>
+</html>
+<script>
+   $(document).ready(function(){
+       var angle = 0;
+       var interval = setInterval(rotateAngle,10);
+
+       function rotateAngle()
+       {
+           angle += 3;
+           console.log(interval);
+           $('#rotatebtn').rotate(angle);
+       }
+
+       $("#rotatebtn").click(function(){
+           clearInterval(interval);
+       });
+
+
+
+   })
+
+
+
+</script>

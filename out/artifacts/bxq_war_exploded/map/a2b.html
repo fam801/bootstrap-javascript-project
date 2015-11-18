@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1:1, minimum-scale=1:1, maximum-scale=1:1,user-scalable=yes" name="viewport" id="viewport" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>路线图</title>
+    <link rel="stylesheet" type="text/css" href="  ../style/t_common.css">
+    <link rel="stylesheet" type="text/css" href="  ../style/second.css">
+    <link rel="stylesheet" type="text/css" href="  ../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="  ../style/map.css">
+    <link rel="stylesheet" type="text/css" href="  ../style/search.css">
+    <script type="text/javascript" src="  ../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="  ../js/map.js"></script>
+    <script type="text/javascript" src="  ../js/search2.js"></script>
+    <script type="text/javascript" src="  ../js/common2.js"></script>
+    <script type="text/javascript" src="  ../js/add.js"></script>
+    <script type="text/javascript" src="  ../js/search.js"></script>
+    <script type="text/javascript" src="  ../js/common.js"></script>
+    <script type="text/javascript" src="  ../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="  ../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="  ../bootstrap/swipe/hammer.min.js"></script>
+    <script type="text/javascript" src="  ../bootstrap/swipe/jquery.hammer.js"></script>
+    
+    <script type="text/javascript">
+    if (('onhashchange' in window) && ((typeof document.documentMode === 'undefined') || document.documentMode == 8)) {
+        // 浏览器支持onhashchange事件
+        window.onhashchange = hashChangeFire; // TODO，对应新的hash执行的操作函数
+    } else {
+        // 不支持则用定时器检测的办法
+        setInterval(function() {
+            var ischanged = isHashChanged(); // TODO，检测hash值或其中某一段是否更改的函数
+            if (ischanged) {
+                hashChangeFire(); // TODO，对应新的hash执行的操作函数
+            }
+        }, 800);
+    };
+
+    function hashChangeFire() {
+       
+        window.location.reload();
+    }
+    </script>
+</head>
+
+<body style="background-color: #F3F3F3;">
+    <input type="hidden" value='' id="locationName">
+    <header>
+        <div>
+            <div class="title">
+                <a href="javascript:window.history.back();" class="font">返回</a>
+            </div>
+            <div class="search" id="search_box">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search">
+
+                </form>
+            </div>
+           
+          
+        </div>
+
+
+        
+           <div class="search" id="search_box3">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search3">
+
+                </form>
+            </div>
+           
+        </div>
+
+         <div class="ss" id = "ss">
+                搜索
+            </div>
+
+
+    <!--     <div class="search" id="search_box2">
+            <div class="search_box">
+               <form action="javascript:void(0)" method="post" id="search2">
+                </form>                                                 
+            </div>
+            <div class="search_span_tips" id = "search_span_tips2" >
+                <table><tr><td >搜索</td></tr></table>
+            </div>
+        </div>
+-->
+
+
+    </div>
+    </header>
+    <div class="nav_sight">
+        <div class="nav_container">
+           <ul>
+                <li style="width:33%;font-weight:bold;"><a href="  ../index.html">西&nbsp;电&nbsp;首&nbsp;页</a></li>
+               
+                <li style="width:33%;font-weight:bold;"><a href="  ../catagory.html">楼&nbsp;宇&nbsp;信&nbsp;息&nbsp;导&nbsp;览</a></li>
+                <li style="width:33%;font-weight:bold;"><a href="  ../catagory2.html">二&nbsp;级&nbsp;单&nbsp;位&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line_container"></div>
+    </div>
+
+    <div class="imgs">
+        <div id="img_carouse" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#img_carouse" data-slide-to="0" class="active"></li>
+                <li data-target="#img_carouse" data-slide-to="1"></li>
+                <li data-target="#img_carouse" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="  ../attached/4.jpg" alt="First slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src="  ../attached/6.jpg" alt="Second slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src="  ../attached/5.jpg" alt="Third slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_line"></div>
+        <div class="content_bar">
+            <i></i>
+            <span>西安电子科技大学路线指示
+            </span>
+        </div>
+        <div class="content_img">
+            <div class="content_img_border">
+                <img class="img-responsive" id="myImg" style="width:100%;height:100%;">
+            </div>
+        </div>
+        <div class="content_brief_map">
+            <p>
+                西安电子科技大学（Xidian University）简称“西电”或“西军电”，坐落于古都西安。学校是中央部属高校，教育部直属、工信部共建， 国家首批“211工程”，是“985工程优势学科创新平台”、“111计划”、“2011计划”重点建设高校（中国电子信息领域、邮电领域唯一的“ 2011计划”牵头高校），35所示范性软件学院的高校之一、集成电路人才培养基地的高校之一，56所获批设立研究生院的重点大学之一， 也是北京高科大学联盟的重要成员。
+            </p>
+            <p id='storeName' style="display:block"></p>
+        </div>
+    </div>
+    <!--网页结尾部分-->
+    <div class="foot navbar-fixed-bottom">
+        <div class="copyright">
+            <span>版权所有&copy;西安电子科技大学</span>
+        </div>
+    </div>
+</body>
+
+</html>

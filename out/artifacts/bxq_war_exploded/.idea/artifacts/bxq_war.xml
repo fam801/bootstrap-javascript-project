@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="bxq:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/bxq_war</output-path>
+    <root id="archive" name="bxq_war.war">
+      <element id="artifact" artifact-name="bxq:war exploded" />
+      <element id="module-output" name="bxq" />
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>

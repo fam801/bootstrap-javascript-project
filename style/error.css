@@ -1,0 +1,42 @@
+body
+{
+    background-color:#f3f3f3;
+}
+
+div.content_brief p
+{
+    font-size:22pt;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    text-indent: 0em;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+    font-family: 'XinGothic-SinaWeibo', 'Microsoft Yahei', 'helvetica', 'aria';
+    font-weight: 100;
+}
+
+div.content_brief
+{
+    position:relative;
+    top:20px;
+}
+
+div.redirect
+{
+    width:100%;
+    height:30px;
+    position:relative;
+    top:20px;
+    line-height:30px;
+    text-align: center;
+}
+
+div.redirect span,a
+{
+    color:#555;
+    font-family: 'XinGothic-SinaWeibo', 'Microsoft Yahei', 'helvetica', 'aria';
+    font-size:10pt;
+}

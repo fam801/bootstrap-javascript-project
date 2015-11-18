@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1:1, minimum-scale=1:1, maximum-scale=1:1,user-scalable=yes" name="viewport" id="viewport" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="stylesheet" type="text/css" href=" style/t_common.css">
+    <link rel="stylesheet" type="text/css" href=" style/second.css">
+    <link rel="stylesheet" type="text/css" href=" style/xd.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/search.css">
+
+    <script type="text/javascript" src=" js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src=" js/jquery.rotate.min.js"></script>
+
+    <script type="text/javascript" src=" js/search.js"></script>
+    <script type="text/javascript" src=" js/common.js"></script>
+     <script type="text/javascript" src=" js/search2.js"></script>
+    <script type="text/javascript" src=" js/common2.js"></script>
+    <script type="text/javascript" src=" bootstrap/js/bootstrap.js" ></script>
+    <script type="text/javascript" src=" bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=" bootstrap/swipe/hammer.min.js"></script>
+    <script type="text/javascript" src=" bootstrap/swipe/jquery.hammer.js"></script>
+    <title>首页</title>
+
+</head>
+<body>
+    <!--网页头部-->
+    <input type="hidden" value="" id="locationName">
+    <header>
+        <div>
+        <div class="title">
+            <a href = "javascript:void(0);" class="font" style="color:#fff;">西电</a>
+        </div>
+
+     
+
+        <div class="search" id="search_box">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search">
+
+                </form>
+            </div>
+           
+          
+        </div>
+
+
+        
+           <div class="search" id="search_box3">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search3">
+
+                </form>
+            </div>
+           
+        </div>
+
+         <div class="ss" id = "ss">
+                搜索
+            </div>
+
+
+    <!--     <div class="search" id="search_box2">
+            <div class="search_box">
+               <form action="javascript:void(0)" method="post" id="search2">
+                </form>                                                 
+            </div>
+            <div class="search_span_tips" id = "search_span_tips2" >
+                <table><tr><td >搜索</td></tr></table>
+            </div>
+        </div>
+-->
+
+
+    </div>
+    </header>
+    <div class="nav_sight">
+        <div class="nav_container">
+           <ul>
+                <li style="width:33%;font-weight:bold;"><a href="index.html">西&nbsp;电&nbsp;首&nbsp;页</a></li>
+               
+                <li style="width:33%;font-weight:bold;"><a href="catagory.html">楼&nbsp;宇&nbsp;信&nbsp;息&nbsp;导&nbsp;览</a></li>
+                <li style="width:33%;font-weight:bold;"><a href="catagory2.html">二&nbsp;级&nbsp;单&nbsp;位&nbsp; </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line_container"></div>
+    </div>
+
+
+    <div class="imgs">
+        <div id="img_carouse" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#img_carouse" data-slide-to="0" class="active"></li>
+                <li data-target="#img_carouse" data-slide-to="1"></li>
+                <li data-target="#img_carouse" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src=" attached/6.jpg" alt="First slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src=" attached/5.jpg" alt="Second slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src=" attached/1.jpg" alt="Third slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_line"></div>
+        <div class="content_bar">
+            <i></i>
+            <span>西安电子科技大学导览</span>
+        </div>
+        <div class="container" style="padding:0px;margin:0px;width:100%;">
+            <div class="row" style="padding:0px;margin:0px;width:100%;">
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                     <div class="sight_title">图书馆</div>
+                     <div class="sight_word">
+                        <img src=" attached/1.jpg" class="img-responsive">
+                        <p>
+                            西安电子科技大学图书馆的前身于1949年8月1日在张家口由中央军委工校创建。现已逐步形成以信息和电子学科为特
+                            色，理、工、文、管、经等多学科文献并存的文献资源保障体系。<a href = "lib.html">详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">主楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/6.jpg" class="img-responsive">
+                        <p>
+                            主教学楼由中国人民解放军总后勤部批准，北京军区后勤部设计处设计，西安市第二建筑公司承建。1956年11月21日
+                            开工，1958年12月21日竣工。俯视望去，主教学楼似一架巨大的飞机。<a href = "zhulou.html">详情&nbsp;>>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">办公楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/bangonglou.jpg" class="img-responsive">
+                        <p>
+                            办公楼由陕西省第一建筑设计院设计，陕西省第十建筑工程公司承建。办公楼呈“工”字形，前楼为四层，
+                            腰部为三层，后楼为六层的书库。办公楼2002年由原用途的图书馆改造而成。<a href = "bangonglou.html">
+                            详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">科技楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/4.jpg" class="img-responsive">
+                        <p>
+                            科技楼92年7月6日开工，95年1月18日竣工。科技大楼为地上11层并为一层地下室。1995年被建筑工程质量监督
+                            站评为市建筑质量优质样板工程。科技大楼用于科学研究及实验用房。<a href = "kejilou.html">
+                            详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">科技实验楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/shiyanlou.jpg" class="img-responsive">
+                        <p>
+                            科技实验楼总面积27859平方米，为“T”型建筑，主楼18层，辅楼3层，在第3层设有与科技楼连接的长廊。该楼中主要
+                            有智能信息处理科学与技术创新引智基地和生命科学技术学院等。<a href = "shiyanlou.html">详情&nbsp;>>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">西大楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/xidalou.jpg" class="img-responsive">
+                        <p>
+                            西大楼1960年5月28日开工，1963年10月29日竣工，设计标准是可容纳2500名学生同时上课教学楼，大楼呈“工”字型。
+                            西教学楼主要用学校教学、科研和部分学院及教师的日常办公用房。<a href = "xidalou.html">详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">东大楼</div>
+                    <div class="sight_word">
+                        <img src=" attached/dongdalou.png" class="img-responsive">
+                        <p>
+                            东大楼1961年11月开工，1965年12月12日竣工。该楼原设计楼层为五层，因当时正逢国家遭受自然灾害，工程在建
+                            中一度下马，后又开工，但修了一面。东大楼主要用于学校的日常教学。<a href = "dongdalou.html">详情&nbsp;
+                            >></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">体育运动中心</div>
+                    <div class="sight_word">
+                        <img src=" attached/tiyu1.jpg" class="img-responsive">
+                        <p>
+                            习惯称之为“风雨操场”，由深圳奥托玛大跨度自动建造工程公司设计，陕西省宝天建筑公司承建，建筑总面积2300平
+                            方米，其中用特殊材料覆盖、36米大跨度屋顶是这一建筑的特点。<a href = "tiyu.html">详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="sight_intro col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="sight_title">文化活动中心</div>
+                    <div class="sight_word">
+                        <img src=" attached/2.jpg" class="img-responsive">
+                        <p>
+                            文化活动中心由电子工业部批准，电子工业部第设计院设计，陕西省省建三公司承建。文化活动中心用于学校开展集会、
+                            娱乐等活动，后面的贴房为科研用房和学校的电话总机用房。<a href = "wenhua.html">详情&nbsp;>></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--网页结尾部分-->
+    <div class="foot">
+        <div class="copyright">
+            <span>版权所有&copy;西安电子科技大学</span>
+        </div>
+    </div>
+  
+</body>
+</html>

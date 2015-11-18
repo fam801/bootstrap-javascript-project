@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <script src="  js/jquery-2.1.4.min.js"></script>
+    <style>
+
+        .animated {
+            -webkit-animation: blink 1s ease-in-out infinite;
+            animation: blink 1s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes blink {
+            0% { background: rgba(255,0,0,0.5); }
+            50% { background: rgba(255,0,0,0); }
+            100% { background: rgba(255,0,0,0.5);}
+        }
+
+        .blinksth {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="blinksth animated"></div>
+<a href="javascript:void(0)" class="js-paused">paused</a>
+<a href="javascript:void(0)" class="js-running">running</a>
+
+Hello World
+</body>
+</html>
+
+<script>
+    $(function(){
+        var animated = $(".animated");
+        $(".js-paused").on("click",function(){
+            animated.css({
+                "animationPlayState":"paused"
+            });
+        });
+        $(".js-running").on("click",function(){
+            animated.css({
+                "animationPlayState":"running"
+            });
+        });
+    });
+
+</script>

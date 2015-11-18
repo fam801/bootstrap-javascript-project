@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="bxq:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/bxq_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bxq" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="bxq/web/Web" />
+      <element id="module-output" name="bxq" />
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>

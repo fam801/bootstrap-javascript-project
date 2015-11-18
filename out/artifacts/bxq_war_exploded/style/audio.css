@@ -1,0 +1,38 @@
+div.audio-box
+{
+    right:0px;
+    top:0px;
+    height:25px;
+    z-index:999;
+    position:fixed;
+    background:#000;
+}
+
+.music-icon
+{
+    background:url("  ../images/audio.png") no-repeat center center;
+    background-size:contain;
+    height:30px;
+    width:30px;
+    position:fixed;
+    right:10px;
+    top:104.5px;
+    z-index:99990;
+
+}
+
+.music-btn
+{
+    width:40px;
+    height:40px;
+    background-color:rgba(0,0,0,0.5);
+    position:fixed;
+    right:5px;
+    top:100px;
+    z-index:99990;
+    border-radius:40px;
+}
+
+
+
+

@@ -1,0 +1,46 @@
+/*index style*/
+div.sight_intro
+{
+    padding:0px;
+    border-bottom:solid 1px #cccccc;
+    border-right:solid 1px #ccc;
+    margin:0px -1px -1px -1px;
+}
+
+div.sight_word
+{
+    width:96%;
+    /*background-color:green;*/
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:5px;
+    clear:both;
+}
+
+div.sight_word img
+{
+    max-height:80px;
+    width:auto;
+    float:right;
+    padding:3px;
+    margin:2px;
+    border-radius:5px;
+    clear:both;
+}
+div.sight_title
+{
+    width:97%;
+    padding-left:3%;
+    padding-top:5px;
+    font-weight: bold;
+}
+
+div.sight_word p
+{
+    width:96%;
+    text-indent: 2em;
+    margin:0px;
+    padding-left:2%;
+    padding-right:2%;
+    line-height:24px;
+}

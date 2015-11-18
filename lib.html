@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1:1, minimum-scale=1:1, maximum-scale=1:1,user-scalable=yes" name="viewport" id="viewport" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+	<title>图书馆</title>
+
+
+	<link rel="stylesheet" type="text/css" href="  style/t_common.css">
+	<link rel="stylesheet" type="text/css" href="  style/second.css">
+    <link rel="stylesheet" type="text/css" href="  bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="  style/search.css">
+
+	<script type="text/javascript" src="  js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="  js/search.js"></script>
+	<script type="text/javascript" src="  js/common.js"></script>
+		<script type="text/javascript" src="  js/search2.js"></script>
+    <script type="text/javascript" src="  js/common2.js"></script>
+    <script type="text/javascript" src="  bootstrap/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="  bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="  bootstrap/swipe/hammer.min.js"></script>
+    <script type="text/javascript" src="  bootstrap/swipe/jquery.hammer.js"></script>
+
+
+</head>
+<body>
+	<input type="hidden" value="lib" id="locationName">
+	<header>
+		<div>
+			<div class="title">
+				<a href = "lib.html" class="font">图书馆</a>
+			</div>
+			 <div class="search" id="search_box">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search">
+
+                </form>
+            </div>
+           
+          
+        </div>
+
+
+        
+           <div class="search" id="search_box3">
+            <div class="search_box">
+                <form action="javascript:void(0)" method="post" id="search3">
+
+                </form>
+            </div>
+           
+        </div>
+
+         <div class="ss" id = "ss">
+                搜索
+            </div>
+
+
+    <!--     <div class="search" id="search_box2">
+            <div class="search_box">
+               <form action="javascript:void(0)" method="post" id="search2">
+                </form>                                                 
+            </div>
+            <div class="search_span_tips" id = "search_span_tips2" >
+                <table><tr><td >搜索</td></tr></table>
+            </div>
+        </div>
+-->
+
+
+    </div>
+    </header>
+    <div class="nav_sight">
+        <div class="nav_container">
+           <ul>
+                <li style="width:33%;font-weight:bold;"><a href="index.html">西&nbsp;电&nbsp;首&nbsp;页</a></li>
+               
+                <li style="width:33%;font-weight:bold;"><a href="catagory.html">楼&nbsp;宇&nbsp;信&nbsp;息&nbsp;导&nbsp;览</a></li>
+                <li style="width:33%;font-weight:bold;"><a href="catagory2.html">二&nbsp;级&nbsp;单&nbsp;位&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line_container"></div>
+    </div>
+
+    <!--网页播放器功能-->
+  
+	<div class="imgs">
+        <div id="img_carouse" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#img_carouse" data-slide-to="0" class="active"></li>
+                <li data-target="#img_carouse" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="  attached/lib1.jpg" alt="First slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+                <div class="item">
+                    <img src="  attached/lib3.jpg" alt="Second slide" class="img-response" style="width:100%;height:100%;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--网页正文部分-->
+	<div class="content">
+		<div class="content_line"></div>
+
+		<div class="content_bar">
+			<i></i>
+			<span id="curLocation"></span>
+		</div>
+
+		<div class="content_img">
+			<div class="content_img_border">
+				<img src="  attached/map1lib.png" class="img-responsive" style="width:100%;height:100%;">
+			</div>
+		</div>
+
+
+
+		<div class="content_bar">
+			<i></i>
+			<span>逸夫图书馆</span>
+		</div>
+		<div class="content_brief">
+			<p>
+				逸夫图书馆于2001年11月正式投入使用，主楼高11层，南裙楼4层，西裙楼3层，建筑总面积1.92万平方米。
+				由于得到邵逸夫先生的部分资助，所以冠名“逸夫图书馆”。
+			</p>
+		
+			<p>
+				经过多年的发展，学校的图书馆已逐步建成了以信息和电子学科为特色，理、工、文、管、经多学科文献并存的文献资源保障体系。
+				北校区逸夫图书馆采用开架、借阅一体化全方位开放、分借统还的管理模式，提供阅览座位2500个。
+			</p>
+			<p>地址：逸夫图书馆北门一层（办公室）</p>
+			<p>电话：029-88202442</p>
+			<p>主页：<a href="http://202.117.122.28/" >http://202.117.122.28/</a></p>
+		</div>
+		
+
+		<div class="content_bar">
+			<i></i>
+			<span>信息化建设处</span>
+		</div>
+		<div class="content_brief">
+			<p>
+				学校校园网始建于1994年，是国内建设校园网最早的高校之一。1995年成立网络中心，挂靠校长办公室管理，主要负责学校网络基础
+				设施建设和运行维护。根据学校整体发展需要，于2008年9月成立信息化建设处，负责学校信息化建设与管理工作。
+			</p>
+			<p>地址：逸夫图书馆11层</p>
+			<p>电话：029-88201252</p>
+			<p>主页：<a href="http://xxc.xidian.edu.cn/" >http://xxc.xidian.edu.cn/</a></p>
+		</div>
+		
+
+		<div class="content_bar">
+			<i></i>
+			<span>网络与继续教育学院</span>
+		</div>
+		<div class="content_brief">
+			<p>
+				网络与继续教育学院是学校下设的二级学院，是开展现代远程教育、成人继续教育和技术与技能培训的办学实体，也是全校现代
+				远程教育和成人继续教育工作的归口管理单位。学院设有院办公室，并设招生、教务、技术保障3个办公室和资源与技术研究中心。
+			</p>
+			<p>地址：图书馆西裙楼一层</p>
+			<p>电话：029-88204137</p>
+			<p>主页：<a href="http://www.xdwy.com.cn/" >http://www.xdwy.com.cn/</a></p>
+		</div>
+		
+
+		<div class="content_bar">
+			<i></i>
+			<span>学生工作处</span>
+		</div>
+		<div class="content_brief">
+			<p>
+				学生工作处是学校主管学生工作的职能部门，下设思想教育、学生管理2个科和学生资助、本科生就业、研究生工作3个办公室。
+			</p>
+			<p>地址：图书馆西裙楼</p>
+			<p>电话：029-88202234</p>
+			<p>主页：<a href="http://xgc.xidian.edu.cn/" >http://xgc.xidian.edu.cn/</a></p>
+		</div>
+		
+
+    </div>
+	<!--网页结尾部分-->
+	<div class="foot">
+		<div class="copyright">
+			<span>版权所有&copy;西安电子科技大学</span>
+		</div>
+	</div>
+</body>
+</html>

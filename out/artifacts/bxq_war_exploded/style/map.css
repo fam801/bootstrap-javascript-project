@@ -1,0 +1,38 @@
+div.cur_location
+{
+    height:43px;
+    width:40%;
+    line-height:43px;
+    text-align:left;
+    color:#fff;
+    display: inline-block;
+    float:right;
+
+}
+
+div.map_show
+{
+   position:relative;
+   top:33px;
+}
+
+div.content_brief_map
+{
+    margin-top:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+div.content_brief_map p
+{
+    margin:0px;
+
+    line-height:24px;
+    font-size:10pt;
+    text-indent: 2em;
+    padding-left:8%;
+    padding-right:8%;
+    background-color:#ececec;
+
+}
+
